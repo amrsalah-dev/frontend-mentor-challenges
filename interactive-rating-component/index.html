@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Overpass:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <div class="ratingCard">
+      <div class="icon-star">
+        <img src="images/icon-star.svg" alt="icon of a star" />
+      </div>
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <form id="ratingForm">
+        <div id="container">
+          <label for="extremelyPoor">
+            <input
+              type="radio"
+              id="extremelyPoor"
+              name="rating"
+              value="1"
+              class="radio-input"
+            />
+            <div class="radioButton">1</div>
+          </label>
+          <label for="bad">
+            <input
+              type="radio"
+              id="bad"
+              name="rating"
+              value="2"
+              class="radio-input"
+            />
+            <div class="radioButton">2</div>
+          </label>
+          <label for="average">
+            <input
+              type="radio"
+              id="average"
+              name="rating"
+              value="3"
+              class="radio-input"
+            />
+            <div class="radioButton">3</div>
+          </label>
+          <label for="good">
+            <input
+              type="radio"
+              id="good"
+              name="rating"
+              value="4"
+              class="radio-input"
+            />
+            <div class="radioButton">4</div>
+          </label>
+          <label for="excellent">
+            <input
+              type="radio"
+              id="excellent"
+              name="rating"
+              value="5"
+              class="radio-input"
+            />
+            <div class="radioButton">5</div>
+          </label>
+        </div>
+        <input type="submit" value="SUBMIT" id="submitBtn" />
+      </form>
+    </div>
+    <div class="thankYouCard hide">
+      <img src="images/illustration-thank-you.svg" alt="image of phone" />
+      <p id="ratingResult"></p>
+      <h1>Thank you!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
