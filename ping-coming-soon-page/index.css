@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/****************** CUSTOM VARIABLES ******************/
+:root {
+    /* font */
+    --h1-font: normal 400 48px/60px 'Libre Franklin';
+    --p-font: normal 300 20px/24px 'Libre Franklin';
+    --btn-font: normal 600 16px/20px 'Libre Franklin';
+    --input-font: normal 300 16px/20px 'Libre Franklin';
+    --footer-font: normal 300 12px/14px 'Libre Franklin';
+    /* color styles */
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --grey: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+    /* shadow */
+    --shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.2304);
+}
+
+body {
+    height: 100vh;
+}
+
+#container {
+    margin: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+}
+
+/******************* FONT STYLING *******************/
+
+h1 {
+    font: var(--h1-font);
+    color: var(--grey);
+    margin-top: 20px;
+}
+
+#bold-text {
+    color: black;
+    font-weight: 700;
+}
+
+p {
+    font: var(--p-font);
+}
+
+footer p {
+    font: var(--footer-font);
+    color: var(--grey);
+}
+
+form,
+footer p {
+    margin-top: 20px;
+}
+
+
+/******************* INPUT FORM STYLING *******************/
+.email-input {
+    font: var(--input-font);
+    height: 56px;
+    width: 421px;
+    border-radius: 28px;
+    border: solid 1px var(--pale-blue);
+    padding: 18px 30px;
+    box-shadow: 0px 0px 7px 3px hsla(0, 0%, 0%, 0);
+}
+
+::placeholder {
+    color: hsla(223, 59%, 83%, 1);
+}
+
+#submitBtn {
+    font: var(--btn-font);
+    color: white;
+    background: var(--blue);
+    height: 56px;
+    width: 200px;
+    border-radius: 28px;
+    border: none;
+    box-shadow: var(--shadow);
+    margin-left: 16px;
+}
+
+#submitBtn:hover {
+    opacity: 80%;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#submitBtn:active {
+    background: hsl(223, 60%, 51%);
+}
+
+/******************* ERROR STATE TEXT *******************/
+.error-text {
+    color: var(--light-red);
+    font: italic 400 12px/20px 'Libre Franklin';
+    letter-spacing: 0.15px;
+    margin: 6px 0 0 30px;
+    text-align: left;
+}
+
+.error-email-border {
+    font: var(--input-font);
+    height: 56px;
+    width: 421px;
+    border-radius: 28px;
+    border: solid 1px var(--light-red);
+    padding: 18px 30px;
+    box-shadow: 0px 0px 7px 3px hsla(0, 0%, 0%, 0);
+}
+
+/******************* SUCCESS STATE *******************/
+.success-text {
+    color: green;
+    font: italic 400 12px/20px 'Libre Franklin';
+    letter-spacing: 0.15px;
+    margin: 6px 0 0 30px;
+    text-align: left;
+}
+
+#dashboardImg img {
+    width: 740px;
+    height: 483px;
+    margin-top: 60px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+/******************* Icons styling *******************/
+.icons i {
+    font-size: 20px;
+    color: var(--blue);
+    border: solid 1px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-color: rgba(76, 123, 243, 0.15);
+}
+
+.icons i:hover {
+    background-color: var(--blue);
+    color: white;
+    transition: 0.2s;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
